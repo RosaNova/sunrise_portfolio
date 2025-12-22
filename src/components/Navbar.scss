@@ -1,0 +1,13 @@
+@media (max-width: 1024px) {
+  .navbar a {
+    @apply text-[45px];
+    @apply font-bold;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 25px !important;
+    @apply font-bold;
+  }
+}
