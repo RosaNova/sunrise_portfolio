@@ -1,117 +1,55 @@
-/* From Uiverse.io by mrhyddenn */
-.button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  border: none;
-  background: transparent !important;
-  cursor: pointer;
-  position: relative;
-  @apply sm:p-[8px];
-  @apply p-0;
-  margin-bottom: 20px;
-  font-weight: 800;
-  transition: all 0.15s ease;
+/* From Uiverse.io by Ali-Tahmazi99 */ 
+/* From uiverse.io by @Ali-Tahmazi99 */
+button {
+ display: flex;
+ justify-content: center ;
+ align-items: center;
+ width: 150px;
+ font-size: 25px;
+ font-weight: 700;
+ height: 50px;
+ border: 2px solid #fb8669b4;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.5s ease-in;
+ z-index: 1;
 }
 
-
-
-.button::before,
-.button::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  left: 0;
-  height: calc(50% - 5px);
-  // border: 1px solid var(--color-red);
-  transition: all 0.15s ease;
+button::before,
+button::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ width: 0;
+ height: 100%;
+ transform: skew(15deg);
+ transition: all 0.5s;
+ overflow: hidden;
+ z-index: -1;
 }
 
-.button::before {
-  top: 0;
-  border-bottom-width: 0;
+button::before {
+ left: -10px;
+ background: #fb8669cb;
 }
 
-.button::after {
-  bottom: 0;
-  border-top-width: 0;
+button::after {
+ right: -10px;
+ background: #fb8569;
 }
 
-.button:active,
-.button:focus {
-  outline: none;
+button:hover::before,
+button:hover::after {
+ width: 58%;
 }
 
-.button:active::before,
-.button:active::after {
-  right: 3px;
-  left: 3px;
+button:hover span {
+ color: #000000;
+ transition: 0.3s;
 }
 
-.button:active::before {
-  top: 3px;
-}
-
-.button:active::after {
-  bottom: 3px;
-}
-
-.button_lg {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 5px 30px;
-  background-color: transparent;
-  overflow: hidden;
-  box-shadow: inset 0px 0px 0px 1px transparent;
-}
-
-.button_lg::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 2px;
-  background-color: #0f1923;
-}
-
-.button_lg::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 4px;
-  height: 4px;
-  background-color: #0f1923;
-  transition: all 0.2s ease;
-}
-
-.button_sl {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: -1px;
-  left: -8px;
-  width: 0;
-  background-color: #ffffff;
-  transform: skew(-15deg);
-  transition: all 0.2s ease;
-}
-
-.button_text {
-  position: relative;
-}
-
-.button:hover .button_sl {
-  width: calc(100% + 15px);
-}
-
-.button:hover .button_lg::after {
-  background-color: #fff;
+button span {
+ color: #fb8569;
+ font-size: 18px;
+ transition: all 0.3s ease-in;
 }

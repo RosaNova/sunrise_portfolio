@@ -15,14 +15,14 @@ const AppRoutes = () => {
     <Routes>
       <Route path="*" element={<NotFound />} />
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/aboutme" element={<About />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/education" element={<Education />} />
       <Route path="/experience" element={<Experience />} />
-      <Route path="/testimonials" element={<Testimonials />} />
-      <Route path="/projectdetail/:id" element={<ProjectDetail/>} />
+      {/* <Route path="/testimonials" element={<Testimonials />} />
+      <Route path="/projectdetail/:id" element={<ProjectDetail/>} /> */}
     </Routes>
   );
 };

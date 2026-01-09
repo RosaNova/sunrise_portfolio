@@ -1,3 +1,28 @@
+.link-navbar .link{
+  padding: 20px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link-item{
+   height: 100%;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+.active{
+  color:#000000;
+   background-color:#fb8569;
+}
+
+
+// .link-item:hover + .active-link{
+//    left: 0;
+//     top: 0;
+// }
+
 @media (max-width: 1024px) {
   .navbar a {
     @apply text-[45px];
@@ -11,3 +36,4 @@
     @apply font-bold;
   }
 }
+

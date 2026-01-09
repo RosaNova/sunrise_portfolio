@@ -13,13 +13,15 @@
   /* font family */
   --font-style: "JetBrains Mono", serif;
   --font-poppins: "Poppins", sans-serif;
+  --font-cabin: "Cabin", sans-serif;
+  --font-lexenddeca: "Lexend Deca", sans-serif;
 }
 
 * {
   @apply select-none;
   // border: 1px solid green;
   box-sizing: border-box;
-  font-family: var(--font-poppins) !important;
+  font-family: var(--font-lexenddeca) !important;
 }
 
 // body {
@@ -39,9 +41,6 @@
 /* Navbar */
 .navbar {
   width: 90%;
-}
-.navbar ul {
-  padding: 5px 0 5px 0px;
 }
 .navbar ul li::before {
   content: "[";

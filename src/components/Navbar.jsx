@@ -5,46 +5,47 @@ import Menu from "../assets/Menu.json";
 import Close from "../assets/close.png";
 import "./Navbar.scss";
 import clsx from "clsx";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { navLinks } from "@/assets/data/navLinks";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <div className="w-full z-[1000] fixed top-0  pb-5 md:pb-10">
-      <div className=" mt-5 top-0 left-[67px]   flex justify-between md:justify-between  shadow-md opacity-100 w-[90%] h-[80px] bg-[#001D21] m-auto border md:border-2 border-[#fb8569] md:rounded-[30px]">
-        <nav className="navbar w-full m-auto  lg:block hidden">
-          <ul className="flex w-full h-full justify-between items-center text-[#fb8569]">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link href="#aboutme">About Me</Link>
-            </li>
-            <li>
-              <Link to="/education">Education</Link>
-            </li>
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#project">Project</a>
-            </li>
-            <li>
-              <a href="#blog">Blog</a>
-            </li>
-            <li>
-              <a href="#Testimonials">Testimonials</a>
-            </li>
-            <li>
-              <a href="#Contact">Contact</a>
-            </li>
+     <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="w-full z-[1000] fixed top-0  pb-5 md:pb-10"
+    >
+  
+      <div className=" mt-5 relative top-0  flex justify-between  shadow-md opacity-100 w-[90%] h-[80px] bg-[#001D21] m-auto border md:border-2 border-[#fb8569]/50 ">
+        <nav className=" w-full h-full m-auto lg:block hidden">
+          <ul className="flex link-navbar   w-full h-full justify-center items-center text-[#fb8569]">
+          {navLinks.map((item, index) => (
+      <motion.li
+        key={index}
+        className="link-item"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: index * 0.1 + 0.3 }}
+        whileHover={{ y: -2 }}
+      >
+        <NavLink
+          to={item.path}
+          className={({ isActive }) =>
+            isActive
+              ? "link active"
+              : "link hover:text-[#fb8569] relative after:absolute after:bottom-2 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-0 after:bg-[#fb8569] after:transition-all after:duration-300"
+          }
+        >
+          {item.name}
+        </NavLink>
+      </motion.li>
+    ))}
           </ul>
         </nav>
-
-
+         
         <nav
           className={clsx(
             "navbar navbar-Mobile bg-black py-10 h-full fixed left-0 top-0 z-10 lg:hidden",
@@ -61,31 +62,31 @@ const Navbar = () => {
           </button>
           <ul className="flex flex-col gap-5 w-full justify-around items-center text-[#fb8569]">
             <li>
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#aboutme">About Me</a>
+              <Link to="#aboutme">About Me</Link>
             </li>
             <li>
-              <a href="#education">Education</a>
+              <Link to="/education">Education</Link>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <Link to="experience">Experience</Link>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <a href="#project">Project</a>
+              <Link to="/project">Project</Link>
             </li>
             <li>
-              <a href="#blog">Blog</a>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <a href="#Testimonials">Testimonials</a>
+              <Link to="/Testimonials">Testimonials</Link>
             </li>
             <li>
-              <a href="#Contact">Contact</a>
+              <Link to="#Contact">Contact</Link>
             </li>
           </ul>
         </nav>
@@ -110,8 +111,7 @@ const Navbar = () => {
           />
         </button>
       </div>
-    
-    </div>
+    </motion.nav>
   );
 };
 

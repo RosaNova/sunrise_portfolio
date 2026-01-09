@@ -1,50 +1,74 @@
 import React, { useEffect } from "react";
-import { BsFacebook } from "react-icons/bs";
-import { FaTelegram } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import Button from "./button/Button";
-import { TypeAnimation } from "react-type-animation";
-
+import { motion } from "framer-motion";
+import { linkSociaMedia } from "@/assets/data/linkSociaMedia";
 const Hero = () => {
   return (
     <div
       id="home"
-      className="md:mt-[100px] mt-[105px]  p-[20px]  md:px-[50px] md:py-0 grid items-center grid-cols-1 grid-rows-1 md:grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 md:grid-rows-1 opacity-100 w-[90%] bg-[#001D21]  m-auto border-[#fb8569] border md:border-2 md:rounded-[30px]"
+      className="md:mt-[100px] mt-[105px]  p-[20px] h-[85%]  md:p-[50px]  grid items-center grid-cols-1 grid-rows-1 md:grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 md:grid-rows-1 opacity-100 w-[90%] bg-[#001D21]  m-auto border-[#fb8569]/50 border md:border-2 "
     >
-      <div className="w-[100%] md:pt-10 sm:gap-4 h-full flex flex-col items-start justify-start flex-wrap">
-        <h1 className="relative w-full text-main flex-col  flex text-start  leading-[70px]  sm:leading-[120px] md:leading-[100px] sm:text-[6.5em] text-[3em]  md:text-[7em] font-bold">
+      <div className="w-[100%]  sm:gap-4 h-full flex flex-col items-start justify-start flex-wrap">
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="text-xl font-bold flex">
+          [Active{" "}
+          <span className="bg-green-700 animate-pulse block w-[10px] rounded-full h-[10px]"></span>
+          ]
+        </motion.span>
+        <motion.h1
+
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="relative w-full text-main flex-col  flex text-start  leading-[70px]  sm:leading-[120px] md:leading-[100px] sm:text-[6.5em] text-[3em]  md:text-[5em] font-bold">
           Hello, I'm
-          <span className="absolute md:right-[-10px] right-[0px] top-[-5px] md:top-0 text-xl flex">
-            [Active{" "}
-            <span className="bg-green-700 block w-[10px] rounded-full h-[10px]"></span>
-            ]
-          </span>
-        </h1>
-        <TypeAnimation
-          className="sm:text-[6.5em] text-[3em]  md:text-[7em] font-bold"
-          sequence={["Sun Rosa", 1000]}
-          speed={10}
-          repeat={Infinity}
-          cursor={false}
+          <span className="sm:text-[6.5em] text-[3em]  md:text-[1.5em] font-bold" >Sun Rosa</span>
+        </motion.h1>
+
+        <motion.div
+          className="w-20 h-1 bg-[#fb8569]"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          style={{ originX: 0 }}
         />
-        <ul className="flex gap-5 border-t border-main pt-5">
-          <li>
-            <a className="text-5xl" href="#">
-              <BsFacebook />
-            </a>
-          </li>
-          <li>
-            <a className="text-5xl" href="#">
-              <FaTelegram />
-            </a>
-          </li>
-          <li>
-            <a className="text-5xl" href="#">
-              <FaInstagram />{" "}
-            </a>
-          </li>
-        </ul>
-        <div className="flex flex-wrap items-center pt-5  sm:p-0 md:gap-10">
+
+        <motion.div
+          className="flex items-center gap-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          {linkSociaMedia.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+
+              <a
+                target="_blank"
+                key={index}
+                href={item.src}
+                className="text-[#fb8569] hover:text-coral-light transition-colors duration-300"
+                whileHover={{ scale: 1.2, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Icon className="text-3xl cursor-pointer" />
+              </a>
+
+            );
+          })}
+        </motion.div>
+
+
+        <motion.div
+               
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1 }}
+                 className="flex  flex-wrap items-center mt-10 sm:p-0 md:gap-10">
           <Button
             className="after:border-2 text-[30px] after:border-main before:border-2 before:border-main"
             title={"Hire Me"}
@@ -53,15 +77,19 @@ const Hero = () => {
             className="after:border-2 text-[30px] after:border-main before:border-2 before:border-main"
             title={"Download CV"}
           />
-        </div>
+        </motion.div>
       </div>
-      <div className="h-full flex  py-0  justify-center items-center w-full   ">
+      <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 , rotate: 360 }}
+              transition={{ duration: 1, delay: 0.4 }}
+             className="h-full flex  py-0  justify-center items-center w-full   ">
         <img
-          className=" md:w-[95%]  border-[20px] w-full h-[80%] border-[rgba(121,120,120,0.17)] z-[1]  object-cover object-top rounded-full"
+          className=" w-[70%]  border-[20px]  h-full border-[rgba(121,120,120,0.17)] z-[1]  object-cover object-top rounded-full"
           src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1751728163/photo_2025-07-05_22-01-11_idkhfe.jpg"
           alt=""
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
