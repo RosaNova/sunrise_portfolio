@@ -6,14 +6,14 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="md:mt-[100px] mt-[105px]  p-[20px] h-[85%]  md:p-[50px]  grid items-center grid-cols-1 grid-rows-1 md:grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 md:grid-rows-1 opacity-100 w-[90%] bg-[#001D21]  m-auto border-[#fb8569]/50 border md:border-2 "
+      className="md:mt-[100px] p-10 mt-[105px] w-ful h-full md:h-[85%]  md:p-[50px]  grid items-center grid-cols-1 grid-rows-1 md:grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 md:grid-rows-1 opacity-100 md:w-[90%] bg-[#001D21]  m-auto border-[#fb8569]/50  md:border-2 "
     >
-      <div className="w-[100%]  sm:gap-4 h-full flex flex-col items-start justify-start flex-wrap">
+      <div className="w-full gap-0 sm:gap-4 h-full  flex flex-col items-start justify-center md:justify-start flex-wrap">
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="text-xl font-bold flex">
+          className="text-xl pb-5 md:pb-0 font-bold flex">
           [Active{" "}
           <span className="bg-green-700 animate-pulse block w-[10px] rounded-full h-[10px]"></span>
           ]
@@ -23,13 +23,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative w-full text-main flex-col  flex text-start  leading-[70px]  sm:leading-[120px] md:leading-[100px] sm:text-[6.5em] text-[3em]  md:text-[5em] font-bold">
+          className="relative w-full text-main flex-col   flex text-start  leading-[70px]  sm:leading-[120px] md:leading-[100px] sm:text-[1em] text-[4em]  md:text-[5em] font-bold">
           Hello, I'm
-          <span className="sm:text-[6.5em] text-[3em]  md:text-[1.5em] font-bold" >Sun Rosa</span>
+          <span className="sm:text-[6.5em] text-[1em]  md:text-[1.5em] font-bold" >Sun Rosa</span>
         </motion.h1>
 
         <motion.div
-          className="w-20 h-1 bg-[#fb8569]"
+          className="w-20 my-4 md:my-0 h-1 bg-[#fb8569]"
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.8, delay: 0.7 }}
@@ -68,7 +68,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1 }}
-                 className="flex  flex-wrap items-center mt-10 sm:p-0 md:gap-10">
+                 className="flex  flex-wrap justify-between md:justify-start w-full md:items-center mt-10 sm:p-0 md:gap-10">
           <Button
             className="after:border-2 text-[30px] after:border-main before:border-2 before:border-main"
             title={"Hire Me"}
@@ -85,7 +85,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 0.4 }}
              className="h-full flex  py-0  justify-center items-center w-full   ">
         <img
-          className=" w-[70%]  border-[20px]  h-full border-[rgba(121,120,120,0.17)] z-[1]  object-cover object-top rounded-full"
+          className=" md:w-[70%] w-[95%]  border-[20px] md:h-full  h-[80%] border-[rgba(121,120,120,0.17)] z-[1]  object-cover object-top rounded-full"
           src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1751728163/photo_2025-07-05_22-01-11_idkhfe.jpg"
           alt=""
         />
