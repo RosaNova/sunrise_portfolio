@@ -4,6 +4,7 @@ import CardComponent from "../components/projects/CardComponent";
 import Button from "../components/button/Button";
 import { BsGithub } from "react-icons/bs";
 import { motion} from "framer-motion";
+import myProjects from "@/assets/data/myProjects";
 
 function Projects() {
   return (
@@ -20,22 +21,11 @@ function Projects() {
       <div className="w-20 h-1 bg-[#fb8569] mt-5  mx-auto" />
       </motion.div>
         <div className="grid gap-4 lg:pt-10 grid-cols-1 xl:gap-7 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
-       
-        <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-         <CardComponent />
-        
+       {
+          myProjects.map((item , index)=>(
+             <CardComponent key={index} year={item.year} link={item.link}  techStack={item.techStack}  description={item.description} image={item.image}  />
+          ))
+       }
       </div>
       
       <motion.div
