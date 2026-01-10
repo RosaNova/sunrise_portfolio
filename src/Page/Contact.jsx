@@ -1,76 +1,55 @@
 import React from "react";
 import Title from "../components/Title";
 import FormContact from "../components/Contact/FormContact"; // <-- Correct casing
-
+import contactMe from "@/assets/data/contactMe";
+import { motion } from "framer-motion";
 const Contact = () => {
   return (
-    <div
-      id="Contact"
-      className="lg:px-[90px] md:px-10 px-4 md:rounded-[30px]   lg:border-2 lg:border-primary w-full lg:w-[90%] m-auto  bg-greenMain"
+    <div 
+       id="Contact"
+      className=" h-screen  md:pt-[150px]  md:pb-10  w-full lg:w-[90%] m-auto  bg-black"
     >
+      <div className="lg:border-2 lg:px-[90px] md:px-10 px-4 lg:border-[#fb8569]/50  w-full h-full">
+      <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+         >
       <Title title={"Contact Me"} />
-      <div className="flex justify-between md:pt-10 md:py-10 lg:flex-row pt-5 md:flex-col gap-10 lg:gap-0 md:gap-14 items-start w-full flex-wrap">
-        <div className="lg:w-[45%] w-full flex flex-wrap gap-2 md:gap-3 lg:gap-5">
-          <div className="flex items-center md:py-0 py-1 gap-1 border-2 px-3 border-primary text-primary rounded-full">
+      </motion.div>
+      <div className="flex justify-between md:pt-[50px] md:py-10 lg:flex-row pt-5 md:flex-col gap-10 lg:gap-0 md:gap-14 items-start w-full flex-wrap">
+        <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+             className="lg:w-[45%] w-full  flex flex-wrap gap-2 md:gap-3 lg:gap-5">
+          {
+           contactMe.map((item , index)=>(
+             <motion.a
+                  key={index}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0}}
+                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                    target="_blank" href="#" className={`flex hover:bg-[#fb8569]/50 duration-200 ease-in-out items-center gap-1 py-3 md:py-2 border-2 px-3 border-[#fb8569] bg-[#fb8569]/10 text-[#fb8569]  ${item.parentClass}`}>
             <img
-              className="w-10 h-10"
-              src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1752717041/b938083d-642e-4d50-b7db-9af0c6f7f32e.png"
-              alt=""
-            />{" "}
-            rozasun61@gmail.com
-          </div>
-          <div className="flex items-center gap-2 border-2 md:py-0 py-3 px-3 border-primary text-primary rounded-full">
-            <img
-              className="w-6 h-6"
-              src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1752729274/10db88e3-5697-420e-92b2-c32cb997bcf8.png"
+              className={item.size}
+              src={item.icon}
               alt=""
             />
-            Instagram
-          </div>
-          <div className="flex items-center gap-1 border-2 px-3 border-primary text-primary rounded-full">
-            <img
-              className="w-7 h-7"
-              src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1752725056/ae7b510a-d6c4-4777-927e-379fae1373c0.png"
-              alt=""
-            />{" "}
-            Facebook
-          </div>
-          <div className="flex items-center md:py-0 py-2 gap-1 border-2 px-3 border-primary text-primary rounded-full">
-            <img
-              className="w-7 h-7"
-              src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1752729365/54876a36-5db1-4fa7-9442-26610d5b4ae3.png"
-              alt=""
-            />{" "}
-            Telegram
-          </div>
-          <div className="flex items-center gap-1 py-2 border-2 px-3 border-primary text-primary rounded-full">
-            <img
-              className="w-7 h-7"
-              src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1752724945/4ca330c6-385a-45b2-a46b-9cea90ff30af.png"
-              alt=""
-            />{" "}
-            LinkedIn
-          </div>
-          <div className="flex items-center gap-1 border-2 px-3 border-primary text-primary rounded-full">
-            <img
-              className="w-5 h-5"
-              src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1752724773/twitter_vixvt8.png"
-              alt=""
-            />{" "}
-            X (Twitter)
-          </div>
-          <div className="flex items-center gap-1 py-3 md:py-2 border-2 px-3 border-primary text-primary rounded-full">
-            <img
-              className="w-5 h-5"
-              src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1752724496/c35b7ca1-1efa-4c05-850b-887cdbf4ee9b.png"
-              alt=""
-            />{" "}
-            +855 972 349 164
-          </div>
-        </div>
-        <div className="lg:w-[45%]  w-full">
+             {item.label}
+          </motion.a>
+           ))
+          }
+         
+        </motion.div>
+        <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="lg:w-[45%]  w-full">
           <FormContact />
-        </div>
+        </motion.div>
+      </div>
       </div>
     </div>
   );
