@@ -3,52 +3,53 @@ import Title from "../components/Title";
 import CardComponent from "../components/projects/CardComponent";
 import Button from "../components/button/Button";
 import { BsGithub } from "react-icons/bs";
-
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import { motion} from "framer-motion";
 
 function Projects() {
   return (
     <div
       id="project"
-      className="project flex flex-col  justify-center items-center gap-5 w-[90%] mx-auto h-auto"
+      className="project bg-black flex pb-20 flex-col xl:pt-[100px] h-auto justify-center items-center gap-5 w-[90%] mx-auto "
     >
+      <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+         >
       <Title title={"My Project"} />
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        className="w-full mt-10 flex gap-0"
-        centeredSlides={window.innerWidth < 768} // Center on mobile, start on md+
-        breakpoints={{
-          320: { slidesPerView: 1, spaceBetween: 20 },
-          375: { slidesPerView: 1, spaceBetween: 54 },
-          640: { slidesPerView: 2, spaceBetween: 30 },
-          1024: { slidesPerView: 4, spaceBetween: 30 },
-        }}
-      >
-        <SwiperSlide className=" mb-10">
-          <CardComponent />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardComponent />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardComponent />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardComponent />
-        </SwiperSlide>
-      </Swiper>
-
+      <div className="w-20 h-1 bg-[#fb8569] mt-5  mx-auto" />
+      </motion.div>
+        <div className="grid gap-4 lg:pt-10 grid-cols-1 xl:gap-7 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+       
+        <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+         <CardComponent />
+        
+      </div>
+      
+      <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="flex justify-center mt-12"
+        >
       <Button
         title="See Github"
-        text={"pl-8"}
-        icon={<BsGithub className="hover:text-black absolute z-50 left-5" />}
+        icon={<BsGithub className="hover:text-black" />}
         className="after:border-2 text-[30px] hover:text-black  after:border-yellow text-yellow before:border-2 before:border-yellow"
       ></Button>
+      </motion.div>
     </div>
   );
 }
