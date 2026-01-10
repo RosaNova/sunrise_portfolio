@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div 
        id="Contact"
-      className=" h-screen  md:pt-[150px]  md:pb-10  w-full lg:w-[90%] m-auto  bg-black"
+      className=" h-auto md:pt-[140px] w-full lg:w-[90%] m-auto  bg-black"
     >
       <div className="lg:border-2 lg:px-[90px] md:px-10 px-4 lg:border-[#fb8569]/50  w-full h-full">
       <motion.div

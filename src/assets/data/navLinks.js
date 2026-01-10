@@ -4,7 +4,7 @@ export const navLinks = [
   { name: "Education", path: "/education" },
   { name: "Experience", path: "/experience" },
   { name: "Skills", path: "/skills" },
-  { name: "Project", path: "/project" },
+  { name: "Project", path: "/projects" },
 //   { name: "Blog", path: "/blog" },
 //   { name: "Testimonials", path: "/testimonials" },
   {name: "Contact" , path: "/contact"}
