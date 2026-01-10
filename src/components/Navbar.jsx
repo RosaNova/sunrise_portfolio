@@ -16,7 +16,7 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="w-full z-[1000] fixed top-0  pb-5 md:pb-10"
+      className="w-full z-[1000] bg-black fixed top-0  pb-5 md:pb-10"
     >
   
       <div className=" md:mt-5 border-b-2  relative top-0  flex justify-between  shadow-md opacity-100 md:w-[90%] w-full h-[80px] m-auto  md:border-2 border-[#fb8569]/50 ">
