@@ -19,7 +19,7 @@ const Navbar = () => {
       className="w-full z-[1000] fixed top-0  pb-5 md:pb-10"
     >
   
-      <div className=" md:mt-5 border-b-2  relative top-0  flex justify-between  shadow-md opacity-100 md:w-[90%] w-full h-[80px] bg-[#001D21] m-auto  md:border-2 border-[#fb8569]/50 ">
+      <div className=" md:mt-5 border-b-2  relative top-0  flex justify-between  shadow-md opacity-100 md:w-[90%] w-full h-[80px] m-auto  md:border-2 border-[#fb8569]/50 ">
         <nav className=" w-full h-full m-auto lg:block hidden">
           <ul className="flex link-navbar   w-full h-full justify-center items-center text-[#fb8569]">
           {navLinks.map((item, index) => (

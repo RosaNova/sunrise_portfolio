@@ -13,23 +13,23 @@ const AboutMe = () => {
     >
       <div className="w-[90%] mx-auto pt-[100px]">
         <motion.div
-          className="text-red-700"
+          className="text-[#fb8569]"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <Title title="About Me" />
-          <p className="text-center mt-[20px] text-md text-main/70">Who I Am</p>
+          <p className="text-center mt-[20px] text-md ">Who I Am</p>
         </motion.div>
 
-        <div className="flex w-full text-main/70 pt-10 justify-between gap-10 flex-wrap">
+        <div className="flex w-full pt-10 justify-between gap-10 flex-wrap">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="md:w-[47%]  w-full">
-            <p className="pb-3">
-              I’m a passionate <span className="font-bold text-main/80"> Web Developer </span> with a strong focus on designing and
+            className="md:w-[47%] text-[#fb8569]  w-full">
+            <p className="pb-3 ">
+              I’m a passionate <span className="font-bold "> Web Developer </span> with a strong focus on designing and
               building modern, high-performance websites and applications. With
               solid experience in HTML, CSS, JavaScript, React.js, Vue.js, PHP,
               and MySQL, I love turning creative ideas into real, efficient, and
@@ -60,7 +60,7 @@ const AboutMe = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="md:w-[47%] w-full">
+            className="md:w-[47%] text-[#fb8569] w-full">
             <div className="w-full">
               <h1 className="text-xl font-bold underline">Personal Details</h1>
               <ul className="py-5">
@@ -104,7 +104,7 @@ const AboutMe = () => {
                   return (
                     <div
                       key={index}
-                      className={`flex justify-center bg-main/20 border-2 border-main/60 text-main  gap-2  rounded-xl items-center ${item.parent}`}
+                      className={`flex justify-center bg-transparent border-2 border-[#fb8569]/60 text-main  gap-2  rounded-xl items-center ${item.parent}`}
                     >
                       <Lottie
                         className={item.class}
