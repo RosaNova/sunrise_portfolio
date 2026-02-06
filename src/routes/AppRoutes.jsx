@@ -7,13 +7,10 @@ import Projects from "@/Page/Projects";
 import Contact from "@/Page/Contact";
 import Education from "@/Page/Education";
 import Experience from "@/Page/Experience";
-import Testimonials from "@/Page/Testimonials";
-import ProjectDetail from "@/components/projects/ProjectDetail";
 import NotFound from "@/Page/NotFound";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="*" element={<NotFound />} />
       <Route path="/" element={<Home />} />
       <Route path="/aboutme" element={<About />} />
       <Route path="/skills" element={<Skills />} />
@@ -21,8 +18,8 @@ const AppRoutes = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/education" element={<Education />} />
       <Route path="/experience" element={<Experience />} />
-      {/* <Route path="/testimonials" element={<Testimonials />} />
-      <Route path="/projectdetail/:id" element={<ProjectDetail/>} /> */}
+      {/* 404 - Always last */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

@@ -6,14 +6,14 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="md:mt-[100px] p-10 mt-[105px] w-ful h-full md:h-[85%]  md:p-[50px]  grid items-center grid-cols-1 grid-rows-1 md:grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 md:grid-rows-1 opacity-100 md:w-[90%]   m-auto border-[#fb8569]/50  md:border-2 "
+      className="md:mt-[100px] p-10 mt-[30px] w-ful h-full md:h-[85%]  md:p-[50px]  grid items-center grid-cols-1 grid-rows-1 md:grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 md:grid-rows-1 opacity-100 md:w-[90%]   m-auto border-[#fb8569]/50  md:border-2 "
     >
       <div className="w-full gap-0 sm:gap-4 h-full  flex flex-col items-start justify-center md:justify-start flex-wrap">
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="text-xl text-[#fb8569] pb-5 md:pb-0 font-bold flex">
+          className="md:text-xl text-[15px] text-[#fb8569] pb-5 md:pb-0 font-bold flex">
           [Active{" "}
           <span className="bg-green-700 animate-pulse block w-[10px] rounded-full h-[10px]"></span>
           ]
@@ -23,7 +23,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative w-full text-[#fb8569] text-main flex-col   flex text-start  leading-[70px]  sm:leading-[120px] md:leading-[45px] sm:text-[1em] text-[4em]  md:text-[2em] font-bold">
+          className="relative  w-full text-[#fb8569] text-main flex-col   flex text-start  leading-[30px]  sm:leading-[120px] md:leading-[45px] sm:text-[1em] text-[1em]  md:text-[2em] font-bold">
           Hi, I’m Sun Rosa. I build web and mobile applications that not only run efficiently under the hood but also provide seamless, user-friendly experiences.
         </motion.h1>
 
@@ -63,28 +63,28 @@ const Hero = () => {
 
 
         <motion.div
-               
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1 }}
-                 className="flex  flex-wrap justify-between md:justify-start w-full md:items-center mt-10 sm:p-0 md:gap-10">
+
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1 }}
+          className="flex  flex-wrap justify-between md:justify-start w-full md:items-center mt-10 sm:p-0 md:gap-10">
           <Button
-            className="after:border-2 text-[30px] after:border-main before:border-2 before:border-main"
-            title={"Hire Me"}
+            className="after:border-2  w-full text-[30px] after:border-main before:border-2 before:border-main"
+            title={"Let’s Talk"}
           />
           <Button
-            className="after:border-2 text-[30px] after:border-main before:border-2 before:border-main"
-            title={"Download CV"}
+            className="after:border-2 w-full text-[30px] after:border-main before:border-2 before:border-main"
+            title={"Resume"}
           />
         </motion.div>
       </div>
       <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 , rotate: 360 }}
-              transition={{ duration: 1, delay: 0.4 }}
-             className="h-full flex  py-0  justify-center items-center w-full   ">
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1, rotate: 360 }}
+        transition={{ duration: 1, delay: 0.4 }}
+        className="h-full flex  py-0  justify-center items-center w-full   ">
         <img
-          className=" md:w-[70%] w-[95%]  border-[20px] md:h-full  h-[80%] border-[#fb8569]/40 z-[1]  object-cover object-top rounded-full"
+          className=" md:w-[70%] w-[95%] xl:w-[73%]  border-[20px] md:h-full  h-[80%] border-[#fb8569]/40 z-[1]  object-cover object-top rounded-full"
           src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1751728163/photo_2025-07-05_22-01-11_idkhfe.jpg"
           alt=""
         />

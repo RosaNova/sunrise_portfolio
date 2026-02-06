@@ -1,20 +1,21 @@
-.link-navbar .link{
+.link-navbar .link {
   padding: 20px 30px;
   font-size: 20px;
   text-decoration: none;
   font-weight: 700;
 }
 
-.link-item{
-   height: 100%;
-   margin: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center; 
+.link-item {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.active{
-  color:#000000;
-   background-color:#fb8569;
+
+.active {
+  color: #000000;
+  background-color: #fb8569;
 }
 
 
@@ -36,4 +37,3 @@
     @apply font-bold;
   }
 }
-
