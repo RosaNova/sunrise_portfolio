@@ -9,9 +9,9 @@ const AboutMe = () => {
   return (
     <div
       id="aboutme"
-      className="about-me  bg-greenMain  w-full  h-screen sm:mt-[100px] p-[0px_10px_50px_10px] sm:p-[0px_40px_50px_40px] md:p-0 md:m-0"
+      className="about-me   bg-greenMain  w-full  h-screen  sm:mt-[100px] p-[0px_10px_50px_10px] sm:p-[0px_40px_50px_40px] md:p-0 md:m-0"
     >
-      <div className="w-[90%] mx-auto pt-[100px]">
+      <div className="w-[90%] mx-auto pt-[100px] pb-10 md:pb-0">
         <motion.div
           className="text-[#fb8569]"
           initial={{ opacity: 0, y: 50 }}
@@ -19,7 +19,7 @@ const AboutMe = () => {
           transition={{ duration: 0.8 }}
         >
           <Title title="About Me" />
-          <p className="text-center mt-[20px] text-md ">Who I Am</p>
+          <p className="text-center md:mt-[20px]  text-md ">Who I Am</p>
         </motion.div>
 
         <div className="flex w-full pt-10 justify-between gap-10 flex-wrap">
@@ -52,7 +52,7 @@ const AboutMe = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
 
-              className="text-md text-center pb-10">
+              className="text-md text-center md:pb-10">
               "I believe in coding with purpose and designing with empathy."
             </motion.p>
           </motion.div>
@@ -60,37 +60,37 @@ const AboutMe = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="md:w-[47%] text-[#fb8569] w-full">
+            className="md:w-[47%]  text-[#fb8569] w-full">
             <div className="w-full">
               <h1 className="text-xl font-bold underline">Personal Details</h1>
               <ul className="py-5">
                 <li className="font-[500]">
-                  FullName : <span className="font-[300] pl-10">Sun Rosa</span>
+                  FullName : <span className="font-[300]  pl-5 md:pl-10">Sun Rosa</span>
                 </li>
 
                 <li className="font-[500]">
                   Date of Birth :
-                  <span className="font-[300] pl-5">December 10, 2004</span>{" "}
+                  <span className="font-[300] pl-5 md:pl-10">December 10, 2004</span>{" "}
                 </li>
                 <li className="font-[500]">
                   Address :
-                  <span className="font-[300] pl-[55px]">
+                  <span className="font-[300] pl-5 md:pl-[55px]">
                     Kompong Cham, Cambodia
                   </span>
                 </li>
                 <li className="font-[500]">
                   Email :{" "}
-                  <span className="font-[300] pl-[72px]">
+                  <span className="font-[300] pl-5 md:pl-[72px]">
                     rozasun61@gmail.com
                   </span>
                 </li>
                 <li className="font-[500]">
                   Phone :{" "}
-                  <span className="font-[300] pl-[65px]">+855 972 349 164</span>
+                  <span className="font-[300] pl-5 md:pl-[65px]">+855 972 349 164</span>
                 </li>
-                <li className="font-[500]">
+                <li className="font-[500] flex ">
                   Languages :
-                  <ul className="pl-10">
+                  <ul className="md:pl-10 pl-5">
                     <li className="font-[300]">Khmer(Native)</li>
                     <li className="font-[300]">English</li>
                   </ul>
