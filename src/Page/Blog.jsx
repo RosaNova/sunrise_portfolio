@@ -1,7 +1,6 @@
 import React from "react";
 import Title from "../components/Title";
 import BlogContainer from "@/components/blog/BlogContainer";
-import Button from "@/components/button/Button";
 
 const Blog = () => {
   return (
