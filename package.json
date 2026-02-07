@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroui/react": "^2.8.8",
     "@rollup/plugin-alias": "^5.1.1",
     "autotyping": "^1.2.6",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.33.0",
     "gsap": "^3.13.0",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.562.0",

@@ -6,7 +6,6 @@ import Writing from "../Writing in Navy.json";
 import Cycling from "../Cycling.json";
 import Climb from "../Rock Climbing.json";
 
-
 export const myInterest = [
  {icon : Soccer , class : "w-10 mb-2", parent : "py-[2px] px-2" , title : "Football"},
  {icon : Book , class : "w-20 absolute left-[-5px] " ,parent : "relative py-[13px]  pl-[55px] pr-5" , title : "Reading Book"},
