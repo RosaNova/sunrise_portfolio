@@ -20,7 +20,7 @@ function Projects() {
         <Title title={"My Project"} />
         <div className="w-20 h-1 bg-[#fb8569] mt-5  mx-auto" />
       </motion.div>
-      <div className="grid gap-4  2xl:grid-cols-5  w-full lg:pt-10 grid-cols-1 xl:gap-7 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+      <div className="grid gap-4  3xl:grid-cols-5  w-full lg:pt-10 grid-cols-1 xl:gap-7 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
         {
           myProjects.map((item, index) => (
             <CardComponent key={index} year={item.year} link={item.link} techStack={item.techStack} description={item.description} image={item.image} />
