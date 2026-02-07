@@ -84,7 +84,7 @@ const Hero = () => {
         transition={{ duration: 1, delay: 0.4 }}
         className="h-full flex  py-0  justify-center items-center w-full   ">
         <img
-          className=" md:w-[70%] 2xl:w-[70%] 2xl:h-[88%]  w-[95%] xl:w-[73%]  border-[20px] md:h-full  h-[80%] border-[#fb8569]/40 z-[1]  object-cover object-top rounded-full"
+          className=" md:w-[70%] 2xl:w-[70%]  lg:h-[90%] 2xl:h-[95%]  w-[95%] xl:w-[73%]   border-[20px] md:h-full  h-[80%] border-[#fb8569]/40 z-[1]  object-cover object-top rounded-full"
           src="https://res.cloudinary.com/dnfahcxo3/image/upload/v1751728163/photo_2025-07-05_22-01-11_idkhfe.jpg"
           alt=""
         />
