@@ -7,9 +7,9 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="w-full lg:px-[80px]  lg:overflow-hidden lg:pt-[140px] lg:pb-[80px]  pt-[100px] h-screen bg-black"
+      className="w-full px-5 lg:px-[80px]  lg:overflow-hidden lg:pt-[140px] lg:pb-[80px]  pt-[100px] h-screen bg-black"
     >
-      <div className="lg:border-2  px-10 lg:border-[#fb8569]/50   w-full h-full ">
+      <div className="lg:border-2  md:px-10 lg:border-[#fb8569]/50   w-full h-full ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
