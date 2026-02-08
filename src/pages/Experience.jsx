@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className=" w-full  p-[0px_10px_0px_10px] h-auto sm:p-[0px_30px_0px_30px] lg:p-[100px_70px_50px_70px] md:p-[100px_40px_50px_40px]">
+      className=" w-full p-5 lg:px-[80px] pt-[100px] md:px-[40px] h-auto ">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 10 }}

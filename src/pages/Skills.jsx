@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="bg-black pt-[100px] w-full px-[80px] md:pb-[70px] p-[30px]"
+      className="bg-black pt-[100px] w-full lg:px-[80px] md:pb-[70px] p-5"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
