@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Button from "./button/Button";
 import { motion } from "framer-motion";
-import { linkSociaMedia } from "@/assets/data/linkSociaMedia";
+import { linkSociaMedia } from "../data/linkSociaMedia";
 const Hero = () => {
   return (
     <div

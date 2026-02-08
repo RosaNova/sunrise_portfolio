@@ -4,7 +4,7 @@ import CardComponent from "../components/projects/CardComponent";
 import Button from "../components/button/Button";
 import { BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
-import myProjects from "@/assets/data/myProjects";
+import myProjects from "@/data/myProjects";
 
 function Projects() {
   return (

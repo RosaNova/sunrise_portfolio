@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../components/Title";
-import FormContact from "../components/Contact/FormContact"; // <-- Correct casing
-import contactMe from "@/assets/data/contactMe";
+import FormContact from "../components/Contact/FormContact";
+import contactMe from "@/data/contactMe";
 import { motion } from "framer-motion";
 const Contact = () => {
   return (

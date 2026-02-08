@@ -5,6 +5,7 @@ import "./App.scss";
 import "./index.scss";
 import Navbar from "./components/Navbar";
 import AnimatedCursor from "react-animated-cursor"
+import Introduction from "./components/Introduction";
 
 const App = () => (
   <BrowserRouter>
@@ -23,6 +24,7 @@ const App = () => (
         border: '1px solid #fb8569'
       }}
     />
+    <Introduction />
   </BrowserRouter>
 );
 

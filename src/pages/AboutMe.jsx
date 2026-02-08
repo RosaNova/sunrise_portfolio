@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Title from "../components/Title";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
-import { myInterest } from "@/assets/data/myInterest";
+import { myInterest } from "@/data/myInterest";
 
 const AboutMe = () => {
 

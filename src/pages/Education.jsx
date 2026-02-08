@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../components/Title";
 import EducationGroupYear from "../components/education/Education-GroupYear";
-import { myEducation } from "@/assets/data/myEducation";
+import { myEducation } from "@/data/myEducation";
 import { motion } from "framer-motion";
 
 const Education = () => {

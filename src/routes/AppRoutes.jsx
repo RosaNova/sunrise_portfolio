@@ -1,13 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "@/Page/Home";
-import About from "@/Page/AboutMe";
-import Skills from "@/Page/Skills";
-import Projects from "@/Page/Projects";
-import Contact from "@/Page/Contact";
-import Education from "@/Page/Education";
-import Experience from "@/Page/Experience";
-import NotFound from "@/Page/NotFound";
+import Home from "@/pages/Home";
+import About from "@/pages/AboutMe";
+import Skills from "@/pages/Skills";
+import Projects from "@/pages/Projects";
+import Contact from "@/pages/Contact";
+import Education from "@/pages/Education";
+import Experience from "@/pages/Experience";
+import NotFound from "@/pages/NotFound";
 const AppRoutes = () => {
   return (
     <Routes>

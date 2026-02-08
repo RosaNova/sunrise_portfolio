@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "../index.scss";
 import Lottie from "lottie-react";
-import Menu from "../assets/Menu.json";
+import Menu from "../data/Menu.json";
 import Close from "../assets/close.png";
 import "./Navbar.scss";
 import clsx from "clsx";
 import { Link, NavLink } from "react-router-dom";
-import { navLinks } from "@/assets/data/navLinks";
+import { navLinks } from "@/data/navLinks";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
