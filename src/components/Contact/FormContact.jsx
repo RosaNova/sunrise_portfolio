@@ -124,7 +124,7 @@ const FormContact = () => {
         className="w-full"
       >
         <Button
-          className=" bg-[#fb8569] text-black px-3 lg:text-[15px] lg:py-2 py-6 text-xl font-bold rounded-xl hover:bg-[#fb8569]/50"
+          className=" bg-[#fb8569] text-black px-3 lg:text-[15px] lg:py-2 py-6 text-md font-bold rounded-xl hover:bg-[#fb8569]/50"
           type="submit"
         >
           Send Message
