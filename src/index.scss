@@ -39,3 +39,26 @@ body {
     font-family: var(--font-display);
   }
 }
+
+input {
+  outline: none !important;
+  border: none !important;
+  color: #fb8569 !important;
+  background-color: #fb8669fa;
+}
+
+label {
+  color: #fb8569 !important;
+}
+
+textarea {
+  outline: none !important;
+  border: none !important;
+  color: #fb8569 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #fb8569 !important;
+  opacity: 0.5;
+}
