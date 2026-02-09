@@ -10,7 +10,6 @@ export const myEducation = [
     {
         year: 2025,
         educationList: [
-            { program: "Back-end Development", description: "PHP, Laravel, MySQL, PostgreSQL", school: "ETEC CENTER", location: "Phnom Penh" },
             { program: "UX/UI Design", description: "Learn Using tool Figma to design UI/UX for Mobile App/Web App", school: "Online Course", location: "Phnom Penh" },
             { program: "C#/ASP.NET", description: "C# Concepts and ASP.NET Core (Build API)", school: "Online Course", location: "Phnom Penh" },
         ]
@@ -18,6 +17,7 @@ export const myEducation = [
     {
         year: 2024,
         educationList: [
+            { program: "Back-end Development", description: "PHP, Laravel, MySQL, PostgreSQL", school: "ETEC CENTER", location: "Phnom Penh" },
             { program: "Web Front-end Development", description: "HTML, CSS, JavaScript", school: "ETEC CENTER", location: "Phnom Penh" },
             { program: "Java/Spring Boot", description: "Java Concepts and Spring Boot (Build API)", school: "ETEC CENTER", location: "Phnom Penh" },
         ]

@@ -17,7 +17,7 @@ const SkillsBlock = ({ title = "", description = "", Skill = [] }) => {
             <div key={index} className="flex items-center gap-1.5">
               <div className="w-1 h-1 rounded-full bg-[#fb8569]/60 group-hover:bg-[#fb8569] transition-colors" />
               <div className="flex justify-between items-center px-1">
-                <span className="text-sm text-[#fb8569] font-medium tracking-wide">{skill.name}</span>
+                <span className="text-sm text-[#fb8569] font-medium tracking-tight">{skill.name}</span>
               </div>
               <div className="h-1 w-full bg-[#fb8569]/10 rounded-full overflow-hidden">
                 <motion.div
