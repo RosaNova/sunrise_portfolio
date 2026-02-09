@@ -1,7 +1,7 @@
 import Title from "../components/Title";
 import { motion } from "framer-motion";
 import SkillsBlock from "../components/skills/SkillsBlock";
-import skillCategories from "@/data/mySkill";
+import skillCategories from "@/data/skills";
 
 
 const Skills = () => {

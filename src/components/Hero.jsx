@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Button from "./button/Button";
 import { motion } from "framer-motion";
-import { linkSociaMedia } from "../data/linkSociaMedia";
+import { socialMediaLinks } from "../data/socialMediaLinks";
 const Hero = () => {
   return (
     <div
@@ -41,7 +41,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          {linkSociaMedia.map((item, index) => {
+          {socialMediaLinks.map((item, index) => {
             const Icon = item.icon;
 
             return (

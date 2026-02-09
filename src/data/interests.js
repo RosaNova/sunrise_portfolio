@@ -1,10 +1,10 @@
-import Soccer from "./Soccer Ball.json";
+import Soccer from "./soccerBall.json";
 import Travel from "./PluLPGMOuF.json";
-import Book from "./Open book.json";
+import Book from "./openBook.json";
 import Gym from "./MrSNWzJYmf.json";
-import Writing from "./Writing in Navy.json";
+import Writing from "./writingInNavy.json";
 import Cycling from "./Cycling.json";
-import Climb from "./Rock Climbing.json";
+import Climb from "./rockClimbing.json";
 
 export const myInterest = [
     { icon: Soccer, class: "w-10 mb-2", parent: "py-[2px] px-2", title: "Football" },

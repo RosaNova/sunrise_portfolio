@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../components/Title";
 import { motion } from "framer-motion";
-import myExperiences from "@/data/myExperiences";
+import myExperiences from "@/data/experiences";
 import { Briefcase, GraduationCap } from "lucide-react";
 
 const Experience = () => {

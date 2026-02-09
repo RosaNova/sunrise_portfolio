@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../components/Title";
-import EducationGroupYear from "../components/education/Education-GroupYear";
-import { myEducation } from "@/data/myEducation";
+import EducationGroupYear from "../components/education/EducationGroupYear";
+import { myEducation } from "@/data/education";
 import { motion } from "framer-motion";
 
 const Education = () => {
@@ -19,7 +19,7 @@ const Education = () => {
       <div className=" w-full  justify-start p-5 md:px-[80px] h-auto flex flex-col ">
         {
           myEducation.map((item, index) => (
-            <EducationGroupYear key={index} year={item.year} educationgroup={item.educationgroup} />
+            <EducationGroupYear key={index} year={item.year} educationlist={item.educationList} />
           ))
         }
       </div>
