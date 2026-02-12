@@ -1,53 +1,18 @@
 const myExperiences = [
     {
-    type: "work",
-    title: "Instructor at ETEC Center",
-    company: "ETEC CENTER",
-    period: "2024 - Present",
-    description: "Teaching programming, web development, and computer science fundamentals while guiding students in real-world projects.",
+        type: "work",
+        title: "Programming Instructor",
+        company: "ETEC Center",
+        period: "2024 - Present",
+        description: "Mentored 50+ students, with 80% successfully building and deploying their first web applications through hands-on, project-based learning.",
     },
-     {
-    type: "work",
-    title: "Instructor at ETEC Center",
-    company: "ETEC CENTER",
-    period: "2024 - Present",
-    description: "Teaching programming, web development, and computer science fundamentals while guiding students in real-world projects.",
-    },
-     {
-    type: "work",
-    title: "Instructor at ETEC Center",
-    company: "ETEC CENTER",
-    period: "2024 - Present",
-    description: "Teaching programming, web development, and computer science fundamentals while guiding students in real-world projects.",
-    },
-     {
-    type: "work",
-    title: "Instructor at ETEC Center",
-    company: "ETEC CENTER",
-    period: "2024 - Present",
-    description: "Teaching programming, web development, and computer science fundamentals while guiding students in real-world projects.",
-    },
-     {
-    type: "work",
-    title: "Instructor at ETEC Center",
-    company: "ETEC CENTER",
-    period: "2024 - Present",
-    description: "Teaching programming, web development, and computer science fundamentals while guiding students in real-world projects.",
-    },
-     {
-    type: "work",
-    title: "Instructor at ETEC Center",
-    company: "ETEC CENTER",
-    period: "2024 - Present",
-    description: "Teaching programming, web development, and computer science fundamentals while guiding students in real-world projects.",
-    },
-     {
-    type: "work",
-    title: "Instructor at ETEC Center",
-    company: "ETEC CENTER",
-    period: "2024 - Present",
-    description: "Teaching programming, web development, and computer science fundamentals while guiding students in real-world projects.",
-    },
+    {
+        type: "education",
+        title: "Bachelor of Computer Science",
+        company: "Royal University of Phnom Penh",
+        period: "2023 - 2026",
+        description: "Specializing in Web Development, Mobile Application Development, and Network Security. Completed multiple academic and personal projects focusing on full-stack systems and secure application design.",
+    }
 ];
 
 export default myExperiences;
