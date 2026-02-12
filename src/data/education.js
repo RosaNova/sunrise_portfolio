@@ -4,7 +4,7 @@ export const myEducation = [
         educationList: [
             { program: "Computer Science", description: "Bachelor of Science in Computer Science", school: "Royal University of Phnom Penh", location: "Phnom Penh" },
             { program: "Mobile App Development", description: "Dart, Flutter Development", school: "Online Course", location: "Phnom Penh" },
-            { program: "API Security", description: "Web Security", school: "Online Course", location: "Phnom Penh" },
+            { program: "API Security", description: "Learn How to protect and secure API", school: "Online Course", location: "Phnom Penh" },
         ]
     },
     {
@@ -17,28 +17,27 @@ export const myEducation = [
     {
         year: 2024,
         educationList: [
-            { program: "Back-end Development", description: "PHP, Laravel, MySQL, PostgreSQL", school: "ETEC CENTER", location: "Phnom Penh" },
-            { program: "Web Front-end Development", description: "HTML, CSS, JavaScript", school: "ETEC CENTER", location: "Phnom Penh" },
+            { program: "Web Development", description: "JavaScript, React.js, Angular.js, Node.js ,Express.js , PHP, Laravel, MySQL, PostgreSQL", school: "ETEC CENTER", location: "Phnom Penh" },
             { program: "Java/Spring Boot", description: "Java Concepts and Spring Boot (Build API)", school: "ETEC CENTER", location: "Phnom Penh" },
         ]
     },
     {
         year: 2023,
         educationList: [
-            { program: "C/C++", description: "Programming Fundamentals (C/C++)", duration: "2022-2026", school: "Royal University of Phnom Penh", location: "Phnom Penh" },
-            { program: "English Language", description: "Part-Time English Course", duration: "2022", school: "Southeast Asia Language School", location: "Phnom Penh" },
+            { program: "C/C++", description: "Programming Fundamentals (C/C++)", school: "Royal University of Phnom Penh", location: "Phnom Penh" },
+            { program: "English Language", description: "Part-Time English Course", school: "Southeast Asia Language School", location: "Phnom Penh" },
         ]
     },
     {
         year: 2022,
         educationList: [
-            { program: "Social Sciences", description: "Secondary School / High School", duration: "2016-2022", school: "Lvea High School", location: "Kompong Cham" },
+            { program: "Social Sciences", description: "Secondary School / High School", school: "Lvea High School", location: "Kompong Cham" },
         ]
     },
     {
         year: 2016,
         educationList: [
-            { program: "Primary Education", description: "Elementary School", duration: "2011-2016", school: "East/West Kok Trea Primary School", location: "Kompong Cham" },
+            { program: "Primary Education", description: "Elementary School", school: "East/West Kok Trea Primary School", location: "Kompong Cham" },
         ]
     }
 ];
