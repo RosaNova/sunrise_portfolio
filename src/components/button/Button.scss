@@ -1,56 +1,54 @@
-/* From Uiverse.io by Ali-Tahmazi99 */ 
-/* From uiverse.io by @Ali-Tahmazi99 */
 .btn {
- display: flex;
- justify-content: center ;
- align-items: center;
- font-size: 25px;
- text-transform: capitalize;
- font-weight: 700;
- height: 50px;
- background-color: #000000;
- border: 2px solid #fb8669b4;
- position: relative;
- overflow: hidden;
- transition: all 0.5s ease-in;
- z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    height: 50px;
+    background-color: #000000;
+    border: 2px solid #fb8669b4;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
 }
 
 .btn::before,
 .btn::after {
- content: '';
- position: absolute;
- top: 0;
- width: 0;
- height: 100%;
- transform: skew(15deg);
- transition: all 0.5s;
- overflow: hidden;
- z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .btn::before {
- left: -10px;
- background: #fb8669cb;
+    left: -10px;
+    background: #fb8669cb;
 }
 
 .btn::after {
- right: -10px;
- background: #fb8569;
+    right: -10px;
+    background: #fb8569;
 }
 
 .btn:hover::before,
 .btn:hover::after {
- width: 58%;
+    width: 58%;
 }
 
 .btn:hover span {
- color: #000000;
- transition: 0.3s;
+    color: #000000;
+    transition: 0.3s;
 }
 
 .btn span {
- color: #fb8569;
- font-size: 18px;
- transition: all 0.3s ease-in;
+    color: #fb8569;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
 }

@@ -8,7 +8,7 @@ const Hero = () => {
       id="home"
       className="md:mt-[100px] p-10 mt-[30px] w-ful h-full md:h-[85%]  md:p-[50px]  grid items-center grid-cols-1 grid-rows-1 md:grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 md:grid-rows-1 opacity-100 md:w-[90%]   m-auto border-[#fb8569]/50  md:border-2 "
     >
-      <div className="w-full gap-0 sm:gap-4 h-full  flex flex-col items-start justify-center md:justify-start flex-wrap">
+      <div className="w-full gap-0 sm:gap-4 h-full flex flex-col items-start justify-center md:justify-start">
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -67,12 +67,14 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
-          className="flex  flex-wrap justify-between md:justify-start w-full md:items-center mt-10 sm:p-0 md:gap-10">
+          className="flex justify-between md:justify-start w-[30%] md:items-center mt-10 sm:p-0 md:gap-10">
           <Button
+            href="https://t.me/rosasun222"
             className="after:border-2  w-full text-[30px] after:border-main before:border-2 before:border-main"
             title={"Let’s Talk"}
           />
           <Button
+            href=""
             className="after:border-2 w-full text-[30px] after:border-main before:border-2 before:border-main"
             title={"Resume"}
           />

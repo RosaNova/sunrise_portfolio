@@ -1,12 +1,17 @@
 import React from "react";
 import "./Button.scss";
-const Button = ({ title , icon}) => {
+const Button = ({ title, icon, href, className, ...props }) => {
+  const Component = href ? "a" : "button";
+
   return (
-    <button className="btn">
+    <Component
+      href={href}
+      className={`btn ${className || ""}`}
+      {...props}
+    >
       {icon}
-  <span> {title}
-  </span>
-</button>
+      <span>{title}</span>
+    </Component>
   );
 };
 

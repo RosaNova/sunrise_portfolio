@@ -15,4 +15,3 @@ export const myInterest = [
     { icon: Cycling, class: "w-10", title: "Cycling", parent: "py-[5px] px-3" },
     { icon: Climb, class: "w-7", title: "Trying New Adventures", parent: "py-[10px] px-3" }
 ];
-
