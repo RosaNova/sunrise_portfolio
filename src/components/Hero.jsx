@@ -67,7 +67,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
-          className="flex justify-between md:justify-start w-[30%] md:items-center mt-10 sm:p-0 md:gap-10">
+          className="flex justify-between  md:justify-start w-[50%] gap-3 lg:w-[30%] md:items-center mt-10 sm:p-0 md:gap-10">
           <Button
             href="https://t.me/rosasun222"
             className="after:border-2  w-full text-[30px] after:border-main before:border-2 before:border-main"
